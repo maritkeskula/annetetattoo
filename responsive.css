@@ -229,7 +229,7 @@ footer {
 }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 430px) {
   /*body {
       background-image: url(images/pic1.png);
     }*/
@@ -279,7 +279,10 @@ footer {
     font-size: 10vw;
   }
     .modal-content {
-      width: 100%;
+      width: 90vw;
+      margin: 0;
+      margin-left: 2vw;
+      padding-top: 10vw;
     }
     .close {
       font-size: 13vw;
