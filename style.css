@@ -73,6 +73,9 @@ font-size: 4vw;
 color: rgba(221,181,38,1.00);
 text-decoration: none;
 }
+.closebtn:hover {
+  color: rgba(184,156,54,1.00);
+}
 .dropdown .closebtn {
 position: absolute;
 }
@@ -174,7 +177,7 @@ h3 {
   font-weight: normal;
 }
 .close:hover, .close:focus {
-  color: #999;
+  color: rgba(184,156,54,1.00);;
   text-decoration: none;
   cursor: pointer;
 }
