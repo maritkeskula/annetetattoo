@@ -32,18 +32,6 @@
 .modal-content {
   width: 55vw;
 }
-.close {
-  font-size: 5vw;
-}
-.prev, .next {
-  top: 48%;
-}
-.next {
-  right: 19.9vw;
-}
-.prev {
-  left: 23.2vw;
-}
 .videosgrid video {
   width: 35vw;
 }
@@ -106,9 +94,6 @@ footer {
     top: 8vw;
     right: 10vw;
   }
-  .prev, .next {
-    top: 40%;
-}
 .gallery img, .videosgrid video, .content3 img, p, .wallpaperimages img {
   border: 0.4vw solid transparent;
 }
@@ -164,28 +149,18 @@ footer {
   .closebtn {
     font-size: 7vw;
   }
+    .modal-content {
+      width: 60vw;
+    }
+    .close {
+      font-size: 6.5vw;
+      top: 8vw;
+      right: 10vw;
+    }
   /* header end */
 
-h1 {
-  font-size: 7vw;
-}
-  .modal-content {
-    width: 60vw;
-  }
-  .close {
-    font-size: 6.5vw;
-    top: 10vw;
-    right: 14vw;
-  }
-  .prev, .next {
-    top:49%;
-    font-size: 4vw;
-  }
-  .prev {
-left: 20.8vw;
-  }
-  .next {
-right: 17vw;
+  h1 {
+    font-size: 7vw;
   }
 
   /* gallery */
@@ -312,16 +287,6 @@ footer {
       font-size: 13vw;
       top: 7vw;
       right: 3vw;
-    }
-    .prev, .next {
-      top:41%;
-      font-size: 10vw;
-    }
-    .prev {
-  left: 0.4vw;
-    }
-    .next {
-  right: 0;
     }
 
     /* gallery */
