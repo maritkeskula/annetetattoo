@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b366e0045c.js" crossorigin="anonymous"></script>
+    <title>Annete Tattoo</title>
+    <script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+  </head>
+  <body>
+<section class="header">
+
+<div class="headercopy">
+
+  <div class="logo">
+    <img src="images/annetelogo.png" alt="logo" height="50px">
+  </div>
+
+    <div class="annetetattoo">
+      <h2>Annete Tattoo</h2>
+    </div>
+
+            <span class="menubtn"  onclick="openNav()">&#9776;
+            </span>
+
+      <div id="myNav" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="dropdown">
+          <a href="aboutme.html">About me</a>
+          <br>
+          <a href="index.html">Portfolio</a><br>
+
+        <div class="socialmedia">
+          <span class="navbaricons">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          <a href="https://www.instagram.com/annetetattoo/">@annetetattoo</a>
+
+          <br>
+          <span class="navbaricons">
+            <i class="fa-brands fa-facebook"></i>
+          </span>
+          <a href="https://www.facebook.com/annetetattoo">Annete Tattoo</a>
+
+          <br>
+          <span class="navbaricons">
+            <i class="fa-solid fa-at"></i>
+          </span>
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">annetetattoo@gmail.com</a>
+
+        </div>
+        </div>
+
+      </div>
+
+
+</div>
+</section>
+
+
+<section class="h1">
+    <h3>About me</h3>
+</section>
+
+<section class="content3">
+
+<div class="aboutmepic">
+<img src="images/aboutmepic.jpg">
+</div>
+
+<div class="aboutmetext">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet eros augue, eget scelerisque tellus luctus non. Nulla hendrerit diam id purus vehicula vehicula.<br>Donec at laoreet diam. Vivamus ut orci turpis. In sodales nec metus ac accumsan. Aenean enim neque, facilisis sit amet massa eget, molestie sagittis mauris.
+<br>
+<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet eros augue, eget scelerisque tellus luctus non. Nulla hendrerit diam id purus vehicula vehicula.
+</p>
+</div>
+
+</section>
+
+<section class="footer">
+
+  <footer>
+
+    <div class="footericons">
+
+      <form action="https://www.instagram.com/annetetattoo/">
+        <button>
+          <span class="ig">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          </button>
+      </form>
+
+      <form action="https://www.facebook.com/annetetattoo">
+        <button>
+          <span class="fb">
+            <i class="fa-brands fa-facebook"></i>
+          </span>
+          </button>
+      </form>
+
+      <form action="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">
+        <button>
+          <span class="gmailcopy">
+            <i class="fa-solid fa-at"></i>
+          </span>
+        </button>
+      </form>
+
+    </div>
+  </footer>
+</section>
+  </body>
+</html>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,49 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b366e0045c.js" crossorigin="anonymous"></script>
     <title>Annete Tattoo</title>
+    <script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
   </head>
   <body>
 <section class="header">
@@ -25,36 +69,39 @@
       <h2>Annete Tattoo</h2>
     </div>
 
-      <div class="menu">
-        <button class="btn">
-          <span style="color: rgba(221,181,38,1.00); font-size: 2.5vw; cursor: pointer;">
-        <i class="fa-solid fa-bars"></i>
-          </span>
+            <span class="menubtn"  onclick="openNav()">&#9776;
+            </span>
 
+      <div id="myNav" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="dropdown">
-          <a href="#aboutme">About me</a>
+          <a href="aboutme.html">About me</a>
           <br>
           <a href="#">Portfolio</a><br>
+
         <div class="socialmedia">
+          <span class="navbaricons">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
           <a href="https://www.instagram.com/annetetattoo/">@annetetattoo</a>
-            <span style="font-size: 2vw; float: right; cursor: pointer;">
-              <i class="fa-brands fa-instagram"></i>
-            </span>
+
           <br>
+          <span class="navbaricons">
+            <i class="fa-brands fa-facebook"></i>
+          </span>
           <a href="https://www.facebook.com/annetetattoo">Annete Tattoo</a>
-            <span style="font-size: 2vw; float: right; cursor: pointer;">
-              <i class="fa-brands fa-facebook"></i>
-            </span>
+
           <br>
-          <a href="#">annetetattoo@gmail.com</a>
-            <span style="font-size: 2vw; float: right; cursor: pointer;">
-              <i class="fa-solid fa-at"></i>
-            </span>
+          <span class="navbaricons">
+            <i class="fa-solid fa-at"></i>
+          </span>
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">annetetattoo@gmail.com</a>
+
         </div>
         </div>
-      </button>
 
       </div>
+
 
 </div>
 </section>
@@ -68,26 +115,111 @@
 <section class="content1">
   <div class="gallery">
 
-    <li>
-      <img src="images/pic1.png">
+      <div class="column">
+        <img src="images/pic1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
 
-      <img src="images/pic2.png">
+        <img src="images/pic2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
 
-      <img src="images/pic3.png">
-    </li>
+        <img src="images/pic3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
 
-    <li>
-      <img src="images/pic4.png">
+      <div class="column">
+        <img src="images/pic4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
 
-      <img src="images/pic5.png">
+        <img src="images/pic5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
 
-      <img src="images/pic6.png">
-    </li>
+        <img src="images/pic6.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+      </div>
+
+    <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="images/pic1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="images/pic2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="images/pic3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="images/pic4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="images/pic5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="images/pic6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="images/pic1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="images/pic2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="images/pic3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="images/pic4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="images/pic5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="images/pic6.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="column">
+      <img class="demo" src="images/pic1.png" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/pic2.png" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/pic3.png" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/pic4.png" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
 
   </div>
 </section>
 
-<section class="videos1">
+<section class="videos">
 <div class="videosgrid">
   <video controls>
     <source src="videos/video1.mp4" type="video/mp4">
@@ -103,20 +235,91 @@
 
   <div class="wallpaper">
     <div class="wallpaperimages">
-      <img src="images/pic7.png" class="pic1">
-      <br>
-      <img src="images/pic8.png" class="pic2">
-      <br>
-      <img src="images/pic9.png" class="pic3">
-      <br>
-      <img src="images/pic7.png" class="pic4">
-      <br>
-      <img src="images/pic8.png" class="pic5">
+      <div class="column1">
+        <img src="images/pic7.png" class="pic1">
+          <br>
+        <img src="images/pic8.png" class="pic2">
+          <br>
+      </div>
+      <div class="column2">
+        <img src="images/pic9.png" class="pic3">
+          <br>
+        <img src="images/pic7.png" class="pic4">
+    </div>
     </div>
   </div>
 </section>
 
+<section class="gallery2section">
+
+  <section class="content2">
+    <div class="gallery">
+
+      <div class="column">
+        <img src="images/pic1.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+
+        <img src="images/pic2.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+
+        <img src="images/pic3.png" onclick="openModal();currentSlide(9)" class="hover-shadow">
+      </div>
+
+        <div class="column">
+        <img src="images/pic4.png" onclick="openModal();currentSlide(10)" class="hover-shadow">
+
+          <img src="images/pic5.png" onclick="openModal();currentSlide(11)" class="hover-shadow">
+
+          <img src="images/pic6.png" onclick="openModal();currentSlide(12)" class="hover-shadow">
+        </div>
+
+    </div>
+</section>
+
+<section class="videos2">
+<div class="videosgrid">
+  <video controls>
+    <source src="videos/video3.mp4" type="video/mp4">
+  </video>
+
+  <video controls>
+    <source src="videos/video4.mp4" type="video/mp4">
+  </video>
+</div>
+</section>
 
 </div>
+
+<section class="footer">
+
+  <footer>
+
+    <div class="footericons">
+
+      <form action="https://www.instagram.com/annetetattoo/">
+        <button>
+          <span class="ig">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          </button>
+      </form>
+
+      <form action="https://www.facebook.com/annetetattoo">
+        <button>
+          <span class="fb">
+            <i class="fa-brands fa-facebook"></i>
+          </span>
+          </button>
+      </form>
+
+      <form action="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">
+        <button>
+          <span class="gmailcopy">
+            <i class="fa-solid fa-at"></i>
+          </span>
+        </button>
+      </form>
+
+    </div>
+  </footer>
+</section>
   </body>
 </html>
