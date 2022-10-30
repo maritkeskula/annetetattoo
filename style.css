@@ -9,6 +9,8 @@ body {
   font-weight: 500;
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
 }
 
 /* Header */
@@ -120,7 +122,7 @@ h3 {
 
 .container {
   padding: 0 5vw;
-  padding-bottom: 3vw;
+  padding-bottom: 10vw;
 }
 .gallery, .videosgrid, .content3 {
   display: flex;
@@ -219,7 +221,7 @@ img.demo {
 .wallpaperimages {
   padding: 3vw;
   padding-bottom: 5vw;
-  padding-left: 10vw;
+  padding-left: 8vw;
   display: grid;
   grid-template-columns: repeat(2, 25vw);
   gap: 1vw;
@@ -229,7 +231,7 @@ img.demo {
   padding-top: 3vw;
 }
 .column2 {
-  padding-top: 5vw;
+  padding-top: 4vw;
 }
 .wallpaperimages img {
   width: 20vw;
@@ -240,18 +242,21 @@ img.demo {
   transform: rotate(-30deg);
 }
 .pic2 {
-  transform: rotate(7deg);
+  transform: rotate(-10deg);
 }
 .pic3 {
-  transform: rotate(20deg);
+  transform: rotate(10deg);
 }
 .pic4 {
-  transform: rotate(-10deg);
+  transform: rotate(20deg);
 }
 /* wallpaper end*/
 /* footer */
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #101010;
   height: 5vw;
   display: flex;

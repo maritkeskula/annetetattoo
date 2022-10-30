@@ -56,6 +56,18 @@ footer {
 .fb, .ig, .gmailcopy {
   font-size: 3.2vw;
 }
+/* about me */
+.content3 {
+  padding: 5vw;
+  padding-top: 0;
+}
+.aboutmepic img, p {
+  cursor: default;
+  width: 35vw;
+}
+p {
+  font-size: 1.9vw;
+}
 }
 
 @media only screen and (max-width: 900px) {
@@ -165,7 +177,7 @@ footer {
 
 .container {
   padding: 0 5vw;
-  padding-bottom: 3vw;
+  padding-bottom: 5vw;
 }
 .gallery, .videosgrid, .content3 {
   display: grid;
@@ -225,6 +237,28 @@ footer {
   height: 10vw;
 }
 .fb, .ig, .gmailcopy {
+  font-size: 4vw;
+}
+
+/* about me */
+h3 {
+  font-size: 10vw;
+}
+.content3 {
+  padding-top: 0;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  gap: 3vw;
+}
+.aboutmepic img, p {
+  cursor: default;
+  width: 70vw;
+}
+p {
   font-size: 4vw;
 }
 }
@@ -294,7 +328,7 @@ footer {
 
     .container {
       padding: 0 1vw;
-      padding-bottom: 3vw;
+      padding-bottom: 20vw;
     }
     .gallery, .videosgrid, .content3 {
       display: grid;
