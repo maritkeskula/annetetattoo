@@ -196,7 +196,7 @@ footer {
 .gallery img:hover, .videosgrid video:hover {
   border-width: 0.4vw;
 }
-.modal-content img:hover {
+.modal-content img {
   border: 0.4vw solid transparent;
 }
 
@@ -328,7 +328,10 @@ p {
 
     .container {
       padding: 0 1vw;
-      padding-bottom: 20vw;
+      padding-bottom: 25vw;
+    }
+    .desktopstyle {
+      display: block;
     }
     .gallery, .videosgrid, .content3 {
       display: grid;
@@ -340,15 +343,18 @@ p {
       gap: 2vw;
       padding-right: 5vw;
     }
-    .gallery img, .videosgrid video, .content3 img, p, .wallpaperimages img {
+    .gallery img, .videosgrid video, .content3 img, p, .wallpaperimages img, .bigimg img {
       width: 45vw;
       border: 1vw solid transparent;
       margin-bottom: 1vw;
     }
-    .gallery img:hover, .videosgrid video:hover, .wallpaperimages img:hover {
+    .bigimg img {
+      width: 90vw;
+    }
+    .gallery img:hover, .videosgrid video:hover, .wallpaperimages img:hover, .bigimg img:hover {
       border-width: 1vw;
     }
-    .modal-content img:hover {
+    .modal-content img {
       border: 1vw solid transparent;
     }
 
@@ -375,7 +381,7 @@ p {
   padding-left: 5vw;
 }
 .column2 {
-  padding-top: 20vw;
+  padding-top: 12vw;
   margin-right: 7vw;
   margin-top: 4vw;
 }
