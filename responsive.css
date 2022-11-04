@@ -54,7 +54,9 @@ padding-left: 8vw;
 }
 footer {
   height: 7vw;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .fb, .ig, .gmailcopy {
   font-size: 3.2vw;
@@ -189,12 +191,20 @@ footer {
   padding-bottom: 14vw;
 }
 .gallery, .videosgrid, .content3 {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 40vw 2vw 40vw;
   grid-template-columns: repeat(2, 40vw);
-  flex-wrap: wrap;
-  justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	-ms-flex-line-pack: stretch;
+	    align-content: stretch;
   gap: 2vw;
 }
 .desktopstyle {
@@ -204,21 +214,44 @@ footer {
   display: none;
 }
 .bigimagedesktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-line-pack: stretch;
+	    align-content: stretch;
   padding-top: 2vw;
 }
 .bigimage {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-align-content: stretch;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-ms-flex-line-pack: stretch;
+    align-content: stretch;
+-ms-grid-columns: none;
 grid-template-columns: none;
 gap: 0;
 padding-right: 0;
@@ -257,10 +290,14 @@ padding-bottom: 2vw;
 .wallpaperimages {
   padding: 0;
   padding-left: 0;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 30vw 5vw 30vw;
   grid-template-columns: repeat(2, 30vw);
   gap: 5vw;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .column2 {
   padding-top: 2vw;
@@ -286,12 +323,23 @@ h3 {
 }
 .content3 {
   padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
   gap: 3vw;
 }
 .aboutmepic img, p {
@@ -374,12 +422,20 @@ p {
       display: block;
     }
     .gallery, .videosgrid, .content3 {
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 45vw 2vw 45vw;
       grid-template-columns: repeat(2, 45vw);
-      flex-wrap: wrap;
-      justify-content: center;
-    	align-items: stretch;
-    	align-content: stretch;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    	-webkit-box-align: stretch;
+    	    -ms-flex-align: stretch;
+    	        align-items: stretch;
+    	-ms-flex-line-pack: stretch;
+    	    align-content: stretch;
       gap: 2vw;
       padding-right: 5vw;
     }
@@ -408,10 +464,14 @@ p {
 }
 .wallpaperimages {
   padding: 3vw;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 40vw 0 40vw;
   grid-template-columns: repeat(2, 40vw);
   gap: 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .wallpaperimages img {
   width: 40vw;
@@ -453,12 +513,23 @@ h3 {
 }
 .content3 {
   padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
   gap: 3vw;
 }
 .aboutmepic img, p {
