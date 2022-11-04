@@ -26,6 +26,9 @@
     .closebtn {
       font-size: 6vw;
     }
+.close {
+  font-size: 9vw;
+}
 .modal {
   padding-top: 10vw;
 }
@@ -100,14 +103,17 @@ p {
     padding-top: 15vw;
   }
   .close {
-    font-size: 4vw;
+    font-size: 9vw;
     top: 8vw;
     right: 10vw;
   }
-.gallery img, .videosgrid video, .content3 img, p, .wallpaperimages img {
+  .container {
+    padding-bottom: 13vw;
+  }
+.gallery img, .videosgrid video, .content3 img, p, .wallpaperimages img, .bigimg img, .bigimgdesktop img {
   border: 0.4vw solid transparent;
 }
-.gallery img:hover, .videosgrid video:hover, .wallpaperimages img:hover {
+.gallery img:hover, .videosgrid video:hover, .wallpaperimages img:hover, .bigimg img:hover, .bigimgdesktop img:hover {
   border-width: 0.4vw;
 }
 footer {
@@ -115,6 +121,9 @@ footer {
 }
 .fb, .ig, .gmailcopy {
   font-size: 3vw;
+}
+.gallerydesktop {
+  display: none;
 }
 }
 
@@ -160,7 +169,7 @@ footer {
     font-size: 7vw;
   }
     .modal-content {
-      width: 60vw;
+      width: 75vw;
     }
     .close {
       font-size: 6.5vw;
@@ -177,7 +186,7 @@ footer {
 
 .container {
   padding: 0 5vw;
-  padding-bottom: 5vw;
+  padding-bottom: 14vw;
 }
 .gallery, .videosgrid, .content3 {
   display: grid;
@@ -186,12 +195,43 @@ footer {
   justify-content: center;
 	align-items: stretch;
 	align-content: stretch;
-  gap: 3vw;
+  gap: 2vw;
+}
+.desktopstyle {
+  display: block;
+}
+.bigimgdesktop  {
+  display: none;
+}
+.bigimagedesktop {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  padding-top: 2vw;
+}
+.bigimage {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+align-content: stretch;
+grid-template-columns: none;
+gap: 0;
+padding-right: 0;
+padding-top: 2vw;
+padding-bottom: 2vw;
+}
+.bigimg img {
+  width: 80vw;
 }
 .gallery img, .videosgrid video, .content3 img, p {
   width: 40vw;
   border: 0.4vw solid transparent;
-  margin-bottom: 3vw;
+  margin-bottom: 0;
 }
 .gallery img:hover, .videosgrid video:hover {
   border-width: 0.4vw;
