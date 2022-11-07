@@ -540,3 +540,16 @@ p {
   font-size: 5vw;
 }
 }
+
+/* safari */
+
+@supports (-webkit-hyphens:none)
+{
+
+  .safari_only {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
