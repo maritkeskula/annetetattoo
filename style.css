@@ -323,22 +323,22 @@ img.demo {
   border: 0.2vw solid transparent;
   cursor: pointer;
 }
-.pic1  {
+#pic1  {
   -webkit-transform: rotate(-30deg);
       -ms-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }
-.pic2 {
+#pic2 {
   -webkit-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-.pic3 {
+#pic3 {
   -webkit-transform: rotate(10deg);
       -ms-transform: rotate(10deg);
           transform: rotate(10deg);
 }
-.pic4 {
+#pic4 {
   -webkit-transform: rotate(20deg);
       -ms-transform: rotate(20deg);
           transform: rotate(20deg);
