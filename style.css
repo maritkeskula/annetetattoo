@@ -323,62 +323,62 @@ img.demo {
   border: 0.2vw solid transparent;
   cursor: pointer;
 }
-#pic1  {
+img#pic1  {
   -webkit-transform: rotate(-30deg);
       -ms-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }
-#pic2 {
+img#pic2 {
   -webkit-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-#pic3 {
+img#pic3 {
   -webkit-transform: rotate(10deg);
       -ms-transform: rotate(10deg);
           transform: rotate(10deg);
 }
-#pic4 {
+img#pic4 {
   -webkit-transform: rotate(20deg);
       -ms-transform: rotate(20deg);
           transform: rotate(20deg);
 }
-#pic5  {
+img#pic5  {
   -webkit-transform: rotate(-30deg);
       -ms-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }
-#pic6  {
+img#pic6  {
   -webkit-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-#pic7  {
+img#pic7  {
   -webkit-transform: rotate(10deg);
       -ms-transform: rotate(10deg);
           transform: rotate(10deg);
 }
-#pic8  {
+img#pic8  {
   -webkit-transform: rotate(20deg);
       -ms-transform: rotate(20deg);
           transform: rotate(20deg);
 }
-#pic9  {
+img#pic9  {
   -webkit-transform: rotate(-30deg);
       -ms-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }
-#pic10  {
+img#pic10  {
   -webkit-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-#pic11  {
+img#pic11  {
   -webkit-transform: rotate(10deg);
       -ms-transform: rotate(10deg);
           transform: rotate(10deg);
 }
-#pic12  {
+img#pic12  {
   -webkit-transform: rotate(20deg);
       -ms-transform: rotate(20deg);
           transform: rotate(20deg);
