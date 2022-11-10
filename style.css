@@ -297,7 +297,7 @@ img.demo {
   padding-top: 3vw;
   background-image: url(images/wallpaper.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 70vw;
 }
 .wallpaperimages {
   padding: 3vw;

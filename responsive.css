@@ -112,9 +112,12 @@ p {
   .container {
     padding-bottom: 13vw;
   }
+  .wallpaper {
+    background-size: 67vw;
+  }
 .gallery img, .videosgrid video, .content3 img, p, .wallpaperimages img, .bigimg img, .bigimgdesktop img {
   border: 0.4vw solid transparent;
-}
+}s
 .gallery img:hover, .videosgrid video:hover, .wallpaperimages img:hover, .bigimg img:hover, .bigimgdesktop img:hover {
   border-width: 0.4vw;
 }
@@ -286,6 +289,7 @@ padding-bottom: 2vw;
 .wallpaper {
   padding-top: 0;
   margin-left: 3vw;
+  background-size: 82vw;
 }
 .wallpaperimages {
   padding: 0;
@@ -458,7 +462,7 @@ p {
 
 .wallpaper {
   background-image: url(images/wallpaper390.png);
-  background-size: 100%;
+  background-size: 88vw;
   padding-right: 0;
   padding-bottom: 0;
 }
@@ -485,16 +489,44 @@ p {
   margin-right: 7vw;
   margin-top: 4vw;
 }
-.pic2 {
+img#pic2 {
   margin-top: 7vw;
 }
-.pic3 {
+img#pic3 {
   margin-top: 17vw;
 }
-.pic4 {
+img#pic4 {
   margin-top: 5vw;
 }
-.pic2, .pic4 {
+img#pic2, img#pic4 {
+  margin-right: 5vw;
+}
+
+
+img#pic6 {
+  margin-top: 7vw;
+}
+img#pic7 {
+  margin-top: 17vw;
+}
+img#pic8 {
+  margin-top: 5vw;
+}
+img#pic6, img#pic8 {
+  margin-right: 5vw;
+}
+
+
+img#pic10 {
+  margin-top: 7vw;
+}
+img#pic11 {
+  margin-top: 17vw;
+}
+img#pic12 {
+  margin-top: 5vw;
+}
+img#pic10, img#pic12 {
   margin-right: 5vw;
 }
 
