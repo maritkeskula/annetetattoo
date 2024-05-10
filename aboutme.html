@@ -12,155 +12,120 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b366e0045c.js" crossorigin="anonymous"></script>
     <title>Annete Tattoo</title>
-    <script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
 
-var slideIndex = 1;
-showSlides(slideIndex);
+        <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+</head>
+<body>
+  <section class="header">
+    <div class="container">
+      <div class="header-wrapper">
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+      <div class="logo">
+        <img src="images/annetelogo.png" alt="logo" height="50px">
+      </div>
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-  </head>
-  <body>
-<section class="header">
+      <div class="annetetattoo">
+        <h2>Annete Tattoo</h2>
+      </div>
 
-<div class="headercopy">
+      <span class="menubtn"  onclick="openNav()">&#9776;</span>
 
-  <div class="logo">
-    <img src="images/annetelogo.png" alt="logo" height="50px">
+<div id="myNav" class="menu">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="dropdown">
+    <div class="dropdown-nav">
+      <a href="index.html">Portfolio</a>
+      <a href="aboutme.html">About me</a>
+    </div>
+    <div class="dropdown-socialmedia">
+      <span class="navbaricons">
+        <i class="fa-brands fa-instagram"></i>
+      </span>
+        <a href="https://www.instagram.com/annetetattoo/">@annetetattoo</a>
+      <span class="navbaricons">
+        <i class="fa-brands fa-facebook"></i>
+      </span>
+        <a href="https://www.facebook.com/annetetattoo">Annete Tattoo</a>
+      <span class="navbaricons">
+        <i class="fa-solid fa-at"></i>
+      </span>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">annetetattoo@gmail.com</a>
   </div>
+</div>
+</div>
+      </div>
+      </div>
+</section>
 
-    <div class="annetetattoo">
-      <h2>Annete Tattoo</h2>
+<section class="h1">
+    <h1>About me</h1>
+</section>
+
+<div class="container">
+  <section class="aboutme-content">
+
+    <div class="aboutmepic">
+    <img src="images/aboutmepic.jpg">
     </div>
 
-            <span class="menubtn"  onclick="openNav()">&#9776;
-            </span>
+<div class="aboutmetext-wrapper">
 
-      <div id="myNav" class="menu">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="dropdown">
-          <a href="index.html">Portfolio</a><br>
-          <a href="aboutme.html">About me</a>
-          <br>
-
-        <div class="socialmedia">
-          <span class="navbaricons">
-            <i class="fa-brands fa-instagram"></i>
-          </span>
-          <a href="https://www.instagram.com/annetetattoo/">@annetetattoo</a>
-
-          <br>
-          <span class="navbaricons">
-            <i class="fa-brands fa-facebook"></i>
-          </span>
-          <a href="https://www.facebook.com/annetetattoo">Annete Tattoo</a>
-
-          <br>
-          <span class="navbaricons">
-            <i class="fa-solid fa-at"></i>
-          </span>
-          <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">annetetattoo@gmail.com</a>
-
-        </div>
-        </div>
+      <div class="aboutmetext">
+        <p>
+          Hello, my name is Annete and I’m from Estonia. I’m a tattoo artist and I’ve been tattooing for <span style="color: rgba(221,181,38,1.00);"><b>7 years.</b></span>  </p></div>
+      <div class="aboutmetext"><p>
+          I can do almost every tattoo style you can imagine, like: fantasy, dotwork, minimalism, abstract, blackwork, neo traditional, fine line, realism, japanese, etc.  </p></div>
+      <div class="aboutmetext"><p>
+        I've been practicing art my whole life and I really <span style="color: rgba(221,181,38,1.00);"><b>love my job!</b></span>
+        </p>
+      </div>
 
       </div>
 
-
-</div>
-</section>
-
-
-<section class="h1">
-    <h3>About me</h3>
-</section>
-<div class="container">
-<section class="content3">
-
-<div class="aboutmepic">
-<img src="images/aboutmepic.jpg">
-</div>
-
-<div class="aboutmetext">
-<p>
-  Hello, my name is Annete and I’m from Estonia. I’m a tattoo artist and I’ve been tattooing for <span style="color: rgba(221,181,38,1.00);"><b>6 years.</b></span>
-<br><br>
-  I can do almost every tattoo style you can imagine, like: fantasy, dotwork, minimalism, abstract, blackwork, neo traditional, fine line, realism, japanese, etc.
-<br><br>
-I've been practicing art my whole life and I really <span style="color: rgba(221,181,38,1.00);"><b>love my job!</b></span>
-</p>
-</div>
-
 </section>
 </div>
+
 <section class="footer">
-
   <footer>
+    <div class="container">
+      <div class="footericons">
 
-    <div class="footericons">
+        <a href="https://www.instagram.com/annetetattoo/">
+          <button>
+            <span class="ig">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+            </button>
+        </a>
 
-      <form action="https://www.instagram.com/annetetattoo/">
-        <button>
-          <span class="ig">
-            <i class="fa-brands fa-instagram"></i>
-          </span>
+        <a href="https://www.facebook.com/annetetattoo">
+          <button>
+            <span class="fb">
+              <i class="fa-brands fa-facebook"></i>
+            </span>
+            </button>
+        </a>
+
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">
+          <button>
+            <span class="gmailcopy">
+              <i class="fa-solid fa-at"></i>
+            </span>
           </button>
-      </form>
+        </a>
 
-      <form action="https://www.facebook.com/annetetattoo">
-        <button>
-          <span class="fb">
-            <i class="fa-brands fa-facebook"></i>
-          </span>
-          </button>
-      </form>
-
-      <form action="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">
-        <button>
-          <span class="gmailcopy">
-            <i class="fa-solid fa-at"></i>
-          </span>
-        </button>
-      </form>
-
+      </div>
     </div>
   </footer>
 </section>
+
   </body>
 </html>

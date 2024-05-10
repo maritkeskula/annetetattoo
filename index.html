@@ -12,662 +12,226 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b366e0045c.js" crossorigin="anonymous"></script>
     <title>Annete Tattoo</title>
+
     <script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-
 </script>
+
   </head>
+
   <body>
-    <div class="safari_only">
-<section class="header">
 
-<div class="headercopy">
+    <section class="header">
+      <div class="container">
+        <div class="header-wrapper">
 
-  <div class="logo">
-    <img src="images/annetelogo.png" alt="logo" height="50px">
-  </div>
-
-    <div class="annetetattoo">
-      <h2>Annete Tattoo</h2>
-    </div>
-
-            <span class="menubtn"  onclick="openNav()">&#9776;
-            </span>
-
-      <div id="myNav" class="menu">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="dropdown">
-          <a href="#">Portfolio</a>
-          <br>
-          <a href="aboutme.html">About me</a>
-          <br>
-
-        <div class="socialmedia">
-          <span class="navbaricons">
-            <i class="fa-brands fa-instagram"></i>
-          </span>
-          <a href="https://www.instagram.com/annetetattoo/">@annetetattoo</a>
-
-          <br>
-          <span class="navbaricons">
-            <i class="fa-brands fa-facebook"></i>
-          </span>
-          <a href="https://www.facebook.com/annetetattoo">Annete Tattoo</a>
-
-          <br>
-          <span class="navbaricons">
-            <i class="fa-solid fa-at"></i>
-          </span>
-          <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">annetetattoo@gmail.com</a>
-
-        </div>
+        <div class="logo">
+          <img src="images/annetelogo.png" alt="logo" height="50px">
         </div>
 
+        <div class="annetetattoo">
+          <h2>Annete Tattoo</h2>
+        </div>
+
+        <span class="menubtn"  onclick="openNav()">&#9776;</span>
+
+<div id="myNav" class="menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="dropdown">
+      <div class="dropdown-nav">
+        <a href="#">Portfolio</a>
+        <a href="aboutme.html">About me</a>
       </div>
-
+      <div class="dropdown-socialmedia">
+        <span class="navbaricons">
+          <i class="fa-brands fa-instagram"></i>
+        </span>
+          <a href="https://www.instagram.com/annetetattoo/">@annetetattoo</a>
+        <span class="navbaricons">
+          <i class="fa-brands fa-facebook"></i>
+        </span>
+          <a href="https://www.facebook.com/annetetattoo">Annete Tattoo</a>
+        <span class="navbaricons">
+          <i class="fa-solid fa-at"></i>
+        </span>
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">annetetattoo@gmail.com</a>
+    </div>
+  </div>
 </div>
-</section>
-
-<section class="h1">
-    <h1>My Portfolio</h1>
+        </div>
+        </div>
 </section>
 
 <div class="container">
-
-<section class="content1">
-
-  <div class="gallery">
-
-        <img src="images/img1.jpg" onclick="openModal();currentSlide(1)">
-
-        <img src="images/img2.jpg" onclick="openModal();currentSlide(2)">
-
-        <img src="images/img3.jpg" onclick="openModal();currentSlide(3)">
-
-      <div class="desktopstyle">
-        <img src="images/img15.jpg" onclick="openModal();currentSlide(15)">
-      </div>
-      </div>
-
+<section class="h1">
+    <h1>My Portfolio</h1>
 </section>
-
-<section class="bigimage">
-
-      <div class="bigimg">
-        <img src="images/img5.jpg" onclick="openModal();currentSlide(5)">
-        </div>
-
-          <div class="bigimgdesktop">
-          <img src="images/img6.jpg" onclick="openModal();currentSlide(6)">
-          </div>
-
-</section>
-
-<section>
-
-  <div class="gallery">
-
-        <img class="lazy" data-src="images/img7.jpg" onclick="openModal();currentSlide(7)">
-
-        <img class="lazy" data-src="images/img8.jpg" onclick="openModal();currentSlide(8)">
-
-        <img class="lazy" data-src="images/img18.jpg" onclick="openModal();currentSlide(18)">
-
-      <div class="desktopstyle">
-        <img class="lazy" data-src="images/img6.jpg" onclick="openModal();currentSlide(6)">
-  </div></div>
-
-    <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img1.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img2.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img3.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img4.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img5.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img6.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img7.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img8.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img9.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img10.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img11.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img12.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img13.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img14.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img15.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img16.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img17.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img18.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img19.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img20.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img21.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img22.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img23.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img24.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img25.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img26.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img27.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img28.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img29.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img30.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img31.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img32.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img33.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img34.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img35.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img36.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img37.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img38.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img39.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img40.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img41.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img42.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img43.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img44.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img class="lazy" data-src="images/img45.jpg" style="width:100%">
-    </div>
-
-  </div>
 </div>
 
+<div class="container">
+<section class="gallery">
+
+    <img class="grid-3" src="images/img1.jpg">
+    <img class="grid-3" src="images/img2.jpg">
+    <img class="grid-3" src="images/img3.jpg">
+    <img class="grid-2" src="images/img4.jpg">
+    <img class="grid-2 grid-responsive" src="images/img5.jpg">
+
+    <video controls autoplay muted playsinline class="grid-2">
+      <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted playsinline class="grid-2">
+      <source src="videos/video2.mp4" type="video/mp4">
+    </video>
 
 </section>
-
-<section class="videos">
-
-<div class="videosgrid">
-  <video controls autoplay muted playsinline>
-    <source src="videos/video1.mp4" type="video/mp4">
-  </video>
-
-  <video controls autoplay muted playsinline>
-    <source src="videos/video2.mp4" type="video/mp4">
-  </video>
 </div>
-</section>
 
+<div class="container">
 <section class="wallpapergrid">
-
-  <div class="wallpaper">
-    <div class="wallpaperimages">
-      <div class="column1">
-        <img class="lazy" data-src="images/imgborder9.jpg" id="pic1" onclick="openModal();currentSlide(9)">
-          <br>
-        <img class="lazy" data-src="images/imgborder10.jpg" id="pic2" onclick="openModal();currentSlide(10)">
-          <br>
-      </div>
-      <div class="column2">
-        <img class="lazy" data-src="images/imgborder11.jpg" id="pic3" onclick="openModal();currentSlide(11)">
-          <br>
-        <img class="lazy" data-src="images/imgborder12.jpg" id="pic4" onclick="openModal();currentSlide(12)">
-    </div>
-    </div>
-  </div>
+  <img class="pic1" src="images/imgborder9.jpg">
+  <img class="pic2" src="images/imgborder10.jpg">
+  <img class="pic3" src="images/imgborder11.jpg">
+  <img class="pic4" src="images/imgborder12.jpg">
 </section>
-
-<section class="gallery2section">
-
-  <section class="content2">
-    <div class="gallery">
-
-          <img class="lazy" data-src="images/img15.jpg" onclick="openModal();currentSlide(15)">
-
-          <img class="lazy" data-src="images/img19.jpg" onclick="openModal();currentSlide(19)">
-
-          <img class="lazy" data-src="images/img17.jpg" onclick="openModal();currentSlide(17)">
-
-        <div class="desktopstyle">
-          <img class="lazy" data-src="images/img4.jpg" onclick="openModal();currentSlide(4)">
-        </div>
-        </div>
-
-  </section>
-
-  <section class="bigimage">
-
-        <div class="bigimg">
-          <img class="lazy" data-src="images/img16.jpg" onclick="openModal();currentSlide(16)">
-        </div>
-
-        <div class="bigimgdesktop">
-        <img class="lazy" data-src="images/img4.jpg" onclick="openModal();currentSlide(4)">
-        </div>
-
-  </section>
-
-  <section>
-
-    <div class="gallery">
-
-          <img class="lazy" data-src="images/img25.jpg" onclick="openModal();currentSlide(25)">
-
-          <img class="lazy" data-src="images/img26.jpg" onclick="openModal();currentSlide(26)">
-
-          <img class="lazy" data-src="images/img27.jpg" onclick="openModal();currentSlide(27)">
-
-        <div class="desktopstyle">
-          <img class="lazy" data-src="images/img28.jpg" onclick="openModal();currentSlide(28)">
-    </div></div>
-
-</section>
-
-<section class="videos2">
-<div class="videosgrid">
-  <video controls autoplay muted playsinline>
-    <source src="videos/video3.mp4" type="video/mp4">
-  </video>
-
-  <video controls autoplay muted playsinline>
-    <source src="videos/video4.mp4" type="video/mp4">
-  </video>
 </div>
-</section>
 
+<div class="container">
+<section class="gallery">
+
+    <img class="grid-3" src="images/img6.jpg">
+    <img class="grid-3" src="images/img7.jpg">
+    <img class="grid-3" src="images/img8.jpg">
+    <img class="grid-2" src="images/img9.jpg">
+    <img class="grid-2 grid-responsive" src="images/img10.jpg">
+    <img class="grid-3 grid-responsive" src="images/img11.jpg">
+    <img class="grid-3" src="images/img12.jpg">
+    <img class="grid-3" src="images/img13.jpg">
+    <img class="grid-2" src="images/img14.jpg">
+    <img class="grid-2" src="images/img15.jpg">
+
+    <video controls autoplay muted playsinline class="grid-2 grid-responsive">
+      <source  src="videos/video3.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted playsinline class="grid-2 grid-responsive">
+      <source src="videos/video4.mp4" type="video/mp4">
+    </video>
+
+</section>
+</div>
+
+<div class="container">
 <section class="wallpapergrid">
-
-  <div class="wallpaper">
-    <div class="wallpaperimages">
-      <div class="column1">
-        <img class="lazy" data-src="images/imgborder21.jpg" id="pic5" onclick="openModal();currentSlide(21)">
-          <br>
-        <img class="lazy" data-src="images/imgborder22.jpg" id="pic6" onclick="openModal();currentSlide(22)">
-          <br>
-      </div>
-      <div class="column2">
-        <img class="lazy" data-src="images/imgborder23.jpg" id="pic7" onclick="openModal();currentSlide(23)">
-          <br>
-        <img class="lazy" data-src="images/imgborder24.jpg" id="pic8" onclick="openModal();currentSlide(24)">
-    </div>
-    </div>
-  </div>
+    <img class="pic1" src="images/imgborder21.jpg">
+    <img class="pic2" src="images/imgborder22.jpg">
+    <img class="pic3" src="images/imgborder23.jpg">
+    <img class="pic4" src="images/imgborder24.jpg">
 </section>
+</div>
 
-<section class="gallery3section">
+<div class="container">
+<section class="gallery">
 
-  <section class="content2">
-    <div class="gallery">
+    <img class="grid-3" src="images/img16.jpg">
+    <img class="grid-3" src="images/img17.jpg">
+    <img class="grid-3" src="images/img18.jpg">
+    <img class="grid-2" src="images/img19.jpg">
+    <img class="grid-2 grid-responsive" src="images/img20.jpg">
+    <img class="grid-3 grid-responsive" src="images/img21.jpg">
+    <img class="grid-3" src="images/img22.jpg">
+    <img class="grid-3" src="images/img23.jpg">
+    <img class="grid-2" src="images/img24.jpg">
+    <img class="grid-2" src="images/img25.jpg">
 
-          <img class="lazy" data-src="images/img13.jpg" onclick="openModal();currentSlide(13)">
+    <video controls autoplay muted playsinline class="grid-2 grid-responsive">
+      <source src="videos/video13.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted playsinline class="grid-2 grid-responsive">
+      <source src="videos/video6.mp4" type="video/mp4">
+    <video controls autoplay muted playsinline class="grid-2 grid-responsive">
+      <source src="videos/video11.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted playsinline class="grid-2 grid-responsive">
+      <source src="videos/video12.mp4" type="video/mp4">
+    </video>
 
-          <img class="lazy" data-src="images/img14.jpg" onclick="openModal();currentSlide(14)">
+</section>
+</div>
 
-          <img class="lazy" data-src="images/img29.jpg" onclick="openModal();currentSlide(29)">
-
-          <div class="desktopstyle">
-            <img class="lazy" data-src="images/img39.jpg" onclick="openModal();currentSlide(39)">
-
-        </div></div>
-
-  </section>
-
-  <section class="bigimage">
-
-        <div class="bigimg">
-          <img class="lazy" data-src="images/img38.jpg" onclick="openModal();currentSlide(38)">
-          </div>
-
-            <div class="bigimgdesktop">
-            <img class="lazy" data-src="images/img39.jpg" onclick="openModal();currentSlide(39)">
-            </div>
-
-  </section>
-
-  <section>
-
-    <div class="gallery">
-
-          <img class="lazy" data-src="images/img36.jpg" onclick="openModal();currentSlide(36)">
-
-          <img class="lazy" data-src="images/img37.jpg" onclick="openModal();currentSlide(37)">
-
-          <img class="lazy" data-src="images/img40.jpg" onclick="openModal();currentSlide(40)">
-
-        <div class="desktopstyle">
-          <img class="lazy" data-src="images/img41.jpg" onclick="openModal(41);currentSlide(6)">
-    </div></div>
-
-    <section class="videos3">
-    <div class="videosgrid">
-      <video controls autoplay muted playsinline>
-        <source src="videos/video13.mp4" type="video/mp4">
-      </video>
-
-      <video controls autoplay muted playsinline>
-        <source src="videos/video6.mp4" type="video/mp4">
-      </video>
-    </div>
-    </section>
-
-    <section class="videos">
-    <div class="videosgrid">
-      <video controls autoplay muted playsinline>
-        <source src="videos/video11.mp4" type="video/mp4">
-      </video>
-
-      <video controls autoplay muted playsinline>
-        <source src="videos/video12.mp4" type="video/mp4">
-      </video>
-    </div>
-    </section>
-
+<div class="container">
 <section class="wallpapergrid">
-
-  <div class="wallpaper">
-    <div class="wallpaperimages">
-      <div class="column1">
-        <img class="lazy" data-src="images/imgborder31.jpg" id="pic9" onclick="openModal();currentSlide(31)">
-          <br>
-        <img class="lazy" data-src="images/imgborder32.jpg" id="pic10" onclick="openModal();currentSlide(32)">
-          <br>
-      </div>
-      <div class="column2">
-        <img class="lazy" data-src="images/imgborder33.jpg" id="pic11" onclick="openModal();currentSlide(33)">
-          <br>
-        <img class="lazy" data-src="images/imgborder34.jpg" id="pic12" onclick="openModal();currentSlide(34)">
-    </div>
-    </div>
-
-    <section class="content2">
-      <div class="gallery">
-
-            <img class="lazy" data-src="images/img42.jpg" onclick="openModal();currentSlide(42)">
-
-            <img class="lazy" data-src="images/img43.jpg" onclick="openModal();currentSlide(43)">
-
-            <img class="lazy" data-src="images/img44.jpg" onclick="openModal();currentSlide(44)">
-
-            <div class="desktopstyle">
-              <img class="lazy" data-src="images/img45.jpg" onclick="openModal();currentSlide(45)">
-
-          </div></div>
-
-    </section>
-
-  </div>
+    <img class="pic1" src="images/imgborder31.jpg">
+    <img class="pic2" src="images/imgborder32.jpg">
+    <img class="pic3" src="images/imgborder33.jpg">
+    <img class="pic4" src="images/imgborder34.jpg">
 </section>
+</div>
 
-<section>
-<div class="gallerydesktop">
-  <div class="gallery">
+<div class="container">
+<section class="gallery">
 
-        <img class="lazy" data-src="images/img20.jpg" onclick="openModal();currentSlide(20)">
+    <img class="grid-3" src="images/img26.jpg">
+    <img class="grid-3" src="images/img27.jpg">
+    <img class="grid-3" src="images/img28.jpg">
+    <img class="grid-2" src="images/img29.jpg">
+    <img class="grid-2 grid-responsive" src="images/img30.jpg">
+    <img class="grid-3 grid-responsive" src="images/img31.jpg">
+    <img class="grid-3 grid-responsive" src="images/img32.jpg">
+    <img class="grid-3 grid-responsive" src="images/img33.jpg">
 
-        <img class="lazy" data-src="images/img28.jpg" onclick="openModal();currentSlide(28)">
-
-        <img class="lazy" data-src="images/img30.jpg" onclick="openModal();currentSlide(30)">
-
-        <div class="desktopstyle">
-          <img class="lazy" data-src="images/img28.jpg" onclick="openModal();currentSlide(28)">
-        </div>
-      </div>
-      </div>
-  </section>
-
-  <section class="videos4">
-  <div class="videosgrid">
-    <video controls autoplay muted playsinline>
+    <video controls autoplay muted playsinline class="grid-2">
       <source src="videos/video7.mp4" type="video/mp4">
     </video>
-
-    <video controls autoplay muted playsinline>
+    <video controls autoplay muted playsinline class="grid-2">
       <source src="videos/video8.mp4" type="video/mp4">
     </video>
-  </div>
+    <video controls autoplay muted playsinlineclass="grid-2">
+      <source src="videos/video9.mp4" type="video/mp4">
+    </video>
+    <video controls autoplay muted playsinline class="grid-2">
+      <source src="videos/video10.mp4" type="video/mp4">
+    </video>
 </section>
-
-<section class="videos5">
-<div class="videosgrid">
-  <video controls autoplay muted playsinline>
-    <source src="videos/video9.mp4" type="video/mp4">
-  </video>
-
-  <video controls autoplay muted playsinline>
-    <source src="videos/video10.mp4" type="video/mp4">
-  </video>
-</div>
-</section>
-
-
 </div>
 
 <section class="footer">
-
   <footer>
+    <div class="container">
+      <div class="footericons">
 
-    <div class="footericons">
+        <a href="https://www.instagram.com/annetetattoo/">
+          <button>
+            <span class="ig">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+            </button>
+        </a>
 
-      <a href="https://www.instagram.com/annetetattoo/">
-        <button>
-          <span class="ig">
-            <i class="fa-brands fa-instagram"></i>
-          </span>
+        <a href="https://www.facebook.com/annetetattoo">
+          <button>
+            <span class="fb">
+              <i class="fa-brands fa-facebook"></i>
+            </span>
+            </button>
+        </a>
+
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">
+          <button>
+            <span class="gmailcopy">
+              <i class="fa-solid fa-at"></i>
+            </span>
           </button>
-      </a>
+        </a>
 
-      <a href="https://www.facebook.com/annetetattoo">
-        <button>
-          <span class="fb">
-            <i class="fa-brands fa-facebook"></i>
-          </span>
-          </button>
-      </a>
-
-      <a href="https://mail.google.com/mail/u/0/?fs=1&to=annetetattoo@gmail.com&tf=cm">
-        <button>
-          <span class="gmailcopy">
-            <i class="fa-solid fa-at"></i>
-          </span>
-        </button>
-      </a>
-
+      </div>
     </div>
   </footer>
 </section>
-</div>
+
   </body>
 </html>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages = document.querySelectorAll("img.lazy");
-  var lazyloadThrottleTimeout;
-
-  function lazyload () {
-    if(lazyloadThrottleTimeout) {
-      clearTimeout(lazyloadThrottleTimeout);
-    }
-
-    lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-            }
-        });
-        if(lazyloadImages.length == 0) {
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-    }, 1);
-  }
-
-  document.addEventListener("scroll", lazyload);
-  window.addEventListener("resize", lazyload);
-  window.addEventListener("orientationChange", lazyload);
-});
-</script>
